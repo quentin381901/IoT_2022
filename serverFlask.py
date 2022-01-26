@@ -2,11 +2,8 @@
 from flask import Flask
 import webbrowser, os, sys, time
 from flask import Flask, flash, redirect, render_template, request, session, abort
-
-import os, time
 from function import *
-
-# from temperature import *
+from temperature import *
 
 app = Flask(__name__)
 
@@ -20,6 +17,11 @@ def hello():
 def  get_text():
     display_text("serverFlask")
     return render_template('index.html',name = display_text("serverFlask"))
+
+@app.route("/temperature/", methods=['GET'])
+def  getTemperature():
+    localTemp()
+    return render_template('temperature.html', temperature = localTemp()['temp_c'], humidity = localTemp()['humidity'])
 
 
 def do_GET(self):
