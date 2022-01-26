@@ -1,6 +1,8 @@
 import os, time
 from pigpio_dht import DHT11, DHT22
-os.system('sudo pigpiod')
+
+os.system('sudo pigpio')
+
 
 Temperature = 4
 sensor = DHT11(Temperature)
@@ -9,6 +11,6 @@ while True:
     result = sensor.read()
     temperature = result['temp_c']
     humidity = result['humidity']
-    if result['valid'] == True :
-        print("temperature :" , temperature, "°C")
-        print("Humidité :" , humidity, "%")
+    if result['valid'] == True:
+        print("temperature :", temperature, "°C")
+        print("Humidité :", humidity, "%")
