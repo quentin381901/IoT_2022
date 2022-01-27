@@ -3,25 +3,42 @@ from flask import Flask
 import webbrowser, os, sys, time
 from flask import Flask, flash, redirect, render_template, request, session, abort
 from function import *
-from temperature import *
+
+# from temperature import *
 
 app = Flask(__name__)
+
 
 # exemple
 @app.route("/")
 def hello():
     return "Hello World!"
 
-#exemple
-@app.route("/test/", methods=['GET'])
-def  get_text():
-    display_text("serverFlask")
-    return render_template('index.html',name = display_text("serverFlask"))
+
+# exemple
+@app.route("/test/")
+def get_text():
+    return display_text("servertest")
+
+
+@app.route('/test2')
+def get_text2():
+    return {'name': display_text("ma route test 2")}
+
+
+#  return render_template('index.html', name=display_text("serverFlask"))
+
 
 @app.route("/temperature/", methods=['GET'])
-def  getTemperature():
+def getTemperature():
     localTemp()
-    return render_template('temperature.html', temperature = localTemp()['temp_c'], humidity = localTemp()['humidity'])
+    return render_template('temperature.html', temperature=localTemp()['temp_c'], humidity=localTemp()['humidity'])
+
+
+# test exemple
+@app.route('/time')
+def get_current_time():
+    return {'time': time.time()}
 
 
 def do_GET(self):
