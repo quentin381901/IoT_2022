@@ -4,7 +4,6 @@ from typing import Any
 global name
 name = "moi meme"
 
-
 def display_text(test):
     if test:
         name = test
