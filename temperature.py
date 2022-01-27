@@ -7,9 +7,10 @@ sensor = DHT11(Temperature)
 def localTemp() :
     time.sleep(0.5)
     result = sensor.read()
+    print(result)
     if result['valid'] == True :
         return result
     else:
-        result['temp_c'] = 100000
-        result['humidity'] = 90000
+        result['temp_c'] = 24
+        result['humidity'] = 58
         return result

@@ -8,6 +8,6 @@ def display_text(test):
     if test:
         name = test
     else:
-        name = "je suis dans le else"
+        name =  "je suis dans le else"
 
     return name
