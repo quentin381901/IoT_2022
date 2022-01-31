@@ -3,8 +3,8 @@ from flask import Flask
 import webbrowser, os, sys, time
 from flask import Flask, flash, redirect, render_template, request, session, abort
 from function import *
-
-# from temperature import *
+from temperature import *
+from lightDetector import *
 
 app = Flask(__name__)
 
@@ -34,6 +34,10 @@ def getTemperature():
     localTemp()
     return render_template('temperature.html', temperature=localTemp()['temp_c'], humidity=localTemp()['humidity'])
 
+@app.route("/light/", methods=['GET'])
+def getLight():
+    light()
+    return render_template('lightDetector.html', light=light())
 
 # test exemple
 @app.route('/time')
