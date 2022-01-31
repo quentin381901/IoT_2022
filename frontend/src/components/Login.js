@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { GoogleLogin } from 'react-google-login';
 // refresh token
 import { refreshTokenSetup } from '../utils/refreshToken';
@@ -14,17 +13,18 @@ function Login() {
       `Logged in successfully welcome ${res.profileObj.name} 😍. \n See console for full profile object.`
     );
     refreshTokenSetup(res);
+
   };
 
   const onFailure = (res) => {
     console.log('Login failed: res:', res);
     alert(
-      `Failed to login. 😢 Please ping this to repo owner twitter.com/sivanesh_fiz`
+      `Utiliser un compte gmail valide `
     );
   };
 
   return (
-    <div>
+      <div>
       <GoogleLogin
         clientId={clientId}
         buttonText="Login"
@@ -35,7 +35,8 @@ function Login() {
         isSignedIn={true}
       />
     </div>
-  );
+
+)
 }
 
 export default Login;

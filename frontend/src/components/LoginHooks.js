@@ -1,6 +1,6 @@
 import React from 'react';
 import { useGoogleLogin } from 'react-google-login';
-
+import { useNavigate } from "react-router-dom";
 // refresh token
 import { refreshTokenSetup } from '../utils/refreshToken';
 
@@ -8,18 +8,18 @@ const clientId =
   '909303957670-au8fme775hu6difq64rlvm2co4ccpcm3.apps.googleusercontent.com';
 
 function LoginHooks() {
+  const navigate = useNavigate();
   const onSuccess = (res) => {
     console.log('Login Success: currentUser:', res.profileObj);
-    alert(
-      `Logged in successfully welcome ${res.profileObj.name} 😍. \n See console for full profile object.`
-    );
+    navigate('/mirror')
+   return
     refreshTokenSetup(res);
   };
 
   const onFailure = (res) => {
     console.log('Login failed: res:', res);
     alert(
-      `Failed to login. 😢 Please ping this to repo owner twitter.com/sivanesh_fiz`
+      `vous n'etes pas connecté'`
     );
   };
 
