@@ -7,7 +7,6 @@ sensor = DHT11(Temperature)
 def localTemp() :
     time.sleep(0.5)
     result = sensor.read()
-    print(result)
     if result['valid'] == True :
         return result
     else:
