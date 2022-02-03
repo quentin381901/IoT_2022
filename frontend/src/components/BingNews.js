@@ -10,7 +10,7 @@ class BingNews extends React.Component {
         };
     }
     componentDidMount() {
-        fetch(`https://bing-news-search1.p.rapidapi.com/news/search?q=lyon&count=5&freshness=Day&textFormat=Raw&safeSearch=Off`, {
+        fetch(`https://bing-news-search1.p.rapidapi.com/news/search?q=Actualité&count=5&freshness=Day&textFormat=Raw&safeSearch=Off`, {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "bing-news-search1.p.rapidapi.com",

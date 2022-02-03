@@ -9,8 +9,8 @@ import {sampleData, displayDate} from "../events-utc";
 const Mirror = () => {
     return <div>
         <div><LogoutHooks></LogoutHooks></div>
+        <div><Temp /></div>
         <div><BingNews/></div>
-        <div><Temp/></div>
         <div>
             <Scheduler data={sampleData} defaultDate={displayDate}>
                 <AgendaView
@@ -21,9 +21,6 @@ const Mirror = () => {
                     selectedShortDateFormat={"From: {0:d} To: {1:d}"}
                 />
             </Scheduler>
-        </div>
-        <div>
-            <Temp />
         </div>
     </div>
 

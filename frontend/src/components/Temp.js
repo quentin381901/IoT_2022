@@ -46,10 +46,10 @@ class Temp extends React.Component {
             return (
                 <div>
                     <p>
-                        {items.temperature}
+                        Température : {items.temperature} C°
                     </p>
                     <p>
-                        {items.humidity}
+                        Humidité : {items.humidity} %
                     </p>
                 </div>
 
