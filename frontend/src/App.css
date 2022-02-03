@@ -122,3 +122,83 @@ input:focus {
 .item .meta > *:not(:last-child) {
   margin-right: 2em;
 }
+
+.k-widget.k-toolbar.k-scheduler-toolbar,
+.k-scheduler-cell.k-heading-cell.k-group-cell.k-scheduler-datecolumn,
+.k-scheduler-cell.k-heading-cell.k-group-cell.k-scheduler-timecolumn,
+.k-scheduler-cell.k-heading-cell.k-scheduler-eventcolumn,
+.k-widget.k-toolbar.k-scheduler-footer,
+.k-scheduler-head{
+  display: none !important;
+}
+
+.k-scheduler-row.k-scheduler-content, .k-scheduler-row{
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.k-scheduler-layout-flex .k-scheduler-cell{
+  border-style: none !important;
+}
+
+.k-scheduler-datecolumn{
+  width: auto !important;
+}
+
+.k-scheduler-layout-flex .k-scheduler-group .k-group-cell, .k-scheduler-layout-flex{
+  overflow: initial;
+}
+
+.k-widget.k-scheduler.k-scheduler-flex.k-floatwrap{
+  height: auto !important;
+  width: 35% !important;
+}
+
+.k-scheduler-layout-flex .k-scheduler-row{
+  flex: initial !important;
+}
+
+.k-scheduler-group{
+  width: 100% !important;
+}
+
+.k-scheduler-cell.k-scheduler-timecolumn{
+  padding: 0 !important;
+  padding-left: 8px !important;
+  padding-top: 8px !important;
+}
+
+.k-scheduler-cell.k-group-content .k-scheduler-cell:not(.k-scheduler-timecolumn){
+  padding-top: 0 !important;
+  padding-bottom: 8px !important;
+  border-bottom: solid 1px white !important;
+}
+
+.k-scheduler-row.k-scheduler-content{
+  padding-top: 15px !important;
+}
+
+.k-scheduler-layout.k-scheduler-layout-flex.k-scheduler-agendaview{
+  color: white !important;
+}
+
+.k-scheduler-layout-flex .k-scheduler-group .k-group-cell{
+  overflow: initial !important;
+}
+
+.k-scheduler-datecolumn.k-group-cell.k-scheduler-cell.k-slot-cell{
+  padding-bottom: 15px !important;
+}
+
+.k-widget.k-scheduler.k-scheduler-flex.k-floatwrap{
+  background-color: black !important;
+}
+
+.k-scheduler-row:hover{
+  background-color: initial !important;
+  color: white !important;
+}
+
+.k-scheduler-cell.k-group-content div:last-child .k-scheduler-cell{
+  border-bottom: none !important;
+}
