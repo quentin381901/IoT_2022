@@ -2,7 +2,7 @@ const baseData = [
     {
         TaskID: 4,
         OwnerID: 2,
-        Title: "Rendez vous avec Quentin!",
+        Title: "Rdv médecin",
         Description: "Projet Raspberry inspection des travaux finis",
         StartTimezone: null,
         Start: "2022-02-04T10:00:00.000Z",
@@ -16,7 +16,7 @@ const baseData = [
     {
         TaskID: 4,
         OwnerID: 2,
-        Title: "Rendez vous avec Quentin!",
+        Title: "Aller chercher les enfants a l'école",
         Description: "Projet Raspberry inspection des travaux finis",
         StartTimezone: null,
         Start: "2022-02-04T15:00:00.000Z",
@@ -30,7 +30,7 @@ const baseData = [
     {
         TaskID: 4,
         OwnerID: 2,
-        Title: "Rendez vous avec Quentin!",
+        Title: "Mettre la viande a décongeler",
         Description: "Projet Raspberry inspection des travaux finis",
         StartTimezone: null,
         Start: "2022-02-04T21:00:00.000Z",
