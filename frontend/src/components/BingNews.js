@@ -10,12 +10,13 @@ class BingNews extends React.Component {
         };
     }
     componentDidMount() {
-        fetch(`https://bing-news-search1.p.rapidapi.com/news?count=5&search?freshness=Day&textFormat=Raw&safeSearch=Strict&q=france`, {
+        fetch(`https://bing-news-search1.p.rapidapi.com/news/search?q=lyon&count=5&freshness=Day&textFormat=Raw&safeSearch=Off`, {
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "bing-news-search1.p.rapidapi.com",
                 "x-rapidapi-key": 'a2442ecbacmshc2159a813e198d5p13bf66jsn2a646d63ec7b',
-                "x-bingapis-sdk": "true"
+                "x-bingapis-sdk": "true",
+                "accept-language": "fr"
             }
         })
             .then(res => res.json())
@@ -25,8 +26,6 @@ class BingNews extends React.Component {
                         isLoaded: true,
                         items: result.value
                     });
-                    console.log("result", result.value)
-                    console.log("l 163")
                 },
                 (error) => {
                     this.setState({

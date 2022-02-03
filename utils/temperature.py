@@ -1,5 +1,5 @@
 import os, time
-from pigpio_dht import DHT11, DHT22
+#from pigpio_dht import DHT11, DHT22
 
 Temperature = 4
 sensor = DHT11(Temperature)

@@ -10,17 +10,16 @@ const clientId =
 function LoginHooks() {
   const navigate = useNavigate();
   const onSuccess = (res) => {
+    console.log('Login ', res);
     console.log('Login Success: currentUser:', res.profileObj);
+   // refreshTokenSetup(res.code);
     navigate('/mirror')
-   return
-    refreshTokenSetup(res);
+
+    return
   };
 
   const onFailure = (res) => {
     console.log('Login failed: res:', res);
-    alert(
-      `vous n'etes pas connecté'`
-    );
   };
 
   const { signIn } = useGoogleLogin({
