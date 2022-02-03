@@ -63,6 +63,9 @@ export default App;*/
 import React from 'react';
 import './App.css';
 import BingNews from './components/BingNews';
+import "@progress/kendo-theme-default/dist/all.css";
+import { Scheduler, AgendaView } from "@progress/kendo-react-scheduler";
+import { sampleData, displayDate } from "./events-utc";
 async function searchNews(q) {
   console.log("je passe ds searchNews")
   q = encodeURIComponent(q);
@@ -97,8 +100,16 @@ function App() {
 
   return (
     <div className="app">
-
       <BingNews />
+      <Scheduler data={sampleData} defaultDate={displayDate}>
+      <AgendaView
+        title="Compact View"
+        step={2}
+        numberOfDays={2}
+        selectedDateFormat={"From: {0:D} To: {1:D}"}
+        selectedShortDateFormat={"From: {0:d} To: {1:d}"}
+      />
+    </Scheduler>
     </div>
   );
 }
