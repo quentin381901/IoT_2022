@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://10.0.2.15:8080/",
+  "proxy": "http://192.168.16.176:8080/",
   "dependencies": {
     "@progress/kendo-react-common": "^5.0.1",
     "@progress/kendo-react-scheduler": "^5.0.1",

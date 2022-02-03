@@ -6,8 +6,7 @@ import Logout from './components/Logout';
 import LoginHooks from './components/LoginHooks';
 import LogoutHooks from './components/LogoutHooks';
 import Mirror from './components/Mirror';
-
-
+import Temp from './components/Temp';
 import {BrowserRouter as Router, Route, Routes, Link, Navigate} from 'react-router-dom';
 
 function App() {
@@ -18,19 +17,20 @@ function App() {
     // setInterval(tick, 1000);
     // console.log("je passe apres ")
     // <h2>It is {timer}</h2>
-    return (
-        <Router>
-            <div className="App">
-                <div id="root">
-                </div>
-                <div>
-                    <Routes>
-                        <Route path='/' element={<LoginHooks/>}/>
-                        <Route path='/mirror' element={<Mirror/>}/>
-                    </Routes>
-                </div>
+
+return (
+    <Router>
+        <div className="App">
+            <div id="root">
             </div>
-        </Router>)
+            <div>
+                <Routes>
+                    <Route path='/' element={<LoginHooks/>}/>
+                    <Route path='/mirror' element={<Mirror/>}/>
+                </Routes>
+            </div>
+        </div>
+    </Router>)
 }
 
 export default App;
