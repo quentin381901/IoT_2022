@@ -6,7 +6,7 @@ import Logout from './components/Logout';
 import LoginHooks from './components/LoginHooks';
 import LogoutHooks from './components/LogoutHooks';
 import Mirror from './components/Mirror';
-//import Timer from './components/Timer';
+
 
 import {BrowserRouter as Router, Route, Routes,Link, Navigate } from 'react-router-dom';
 function App() {
