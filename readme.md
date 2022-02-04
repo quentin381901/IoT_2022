@@ -1,29 +1,29 @@
-#Le projet IOT Miroir connecté
+# Le projet IOT Miroir connecté
 
-##Groupe : 
+## Groupe : 
 * M.Achache
 * L.Hoareau
 * Q.Comelli
 * A.Jamon
 
-##Technologies utilisées
+## Technologies utilisées
 * Python
 * React JS
 * Rasperry pi
 
-##Répartition :
-#####Quentin :
+## Répartition :
+##### Quentin :
 * Partie electronique 
 * back end python 
 * CSS front
 
-#####Lucas: 
+##### Lucas: 
 * Module audio partie front end 
 
-#####Alban : 
+##### Alban : 
 * Module de to do list partie 
 
-#####Morgan :  
+##### Morgan :  
 * Partie back end 
 * front end  (timer , login google)
 
