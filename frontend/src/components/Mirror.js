@@ -28,7 +28,7 @@ const Mirror = () => {
             </div>
 
             <div id="Temp-Date">
-                <div>
+                <div id="timer">
                     <Timer />
                 </div>
                 

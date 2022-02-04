@@ -26,9 +26,9 @@ class Timer extends React.Component {
     render() {
         return (
             <div >
-                <h2>{this.state.date.toLocaleTimeString()}
+                <h1>{this.state.date.toLocaleTimeString()}
                     <br /> {this.tab_jour[this.day]}   {this.state.date.toLocaleDateString()}
-                </h2>
+                </h1>
             </div>
         )
     }
