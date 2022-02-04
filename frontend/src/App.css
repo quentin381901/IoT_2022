@@ -142,20 +142,20 @@ body{
 
 .k-scheduler, #Temperature p, .item .title{
   font-size: 24px !important;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .item .title{
-  font-weight: 300;
+  font-weight: 400;
 }
 
 #NewsContent .description{
   font-size: 22px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .k-scheduler-agendaday{
-  font-weight: 200 !important;
+  font-weight: 300 !important;
 }
 
 .k-scheduler-row.k-scheduler-content, .k-scheduler-row{
@@ -249,7 +249,7 @@ body{
 }
 
 #NewsContent h1{
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 6%;
 }
 
@@ -285,7 +285,7 @@ body{
 
 #Temperature{
   color: white;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 #Calendar, #Logout, #Temp-Date{
@@ -329,7 +329,7 @@ body{
 #Temp-Date h1{
   color: white;
   text-align: end;
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 10px;
   font-size: 40px;
 }
@@ -342,7 +342,7 @@ body{
   display: flex;
   justify-content: space-around;
   font-size: 24px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 #here audio{
@@ -352,5 +352,5 @@ body{
 
 #timer H2{
   color: white;
-  font-weight: 200;
+  font-weight: 300;
 }
