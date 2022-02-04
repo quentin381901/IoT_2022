@@ -23,10 +23,12 @@ class AudioPlayer extends React.Component {
 
 		return (
 			<div>
-				<div onClick={handleClick} class="me" id="pop" mylink={tome}>POP</div>
-				<div onClick={handleClick} class="me" id="electro" mylink={allineed}>funk</div>
-				<div class="me" id="rock" mylink="5GcPA3C0QeI">rock</div>
-				<div onClick={handleStop} id="stop">stop</div>
+				<div id='musiqueStyle'>
+					<div onClick={handleClick} className="me" id="pop" mylink={tome}>Pop</div>
+					<div onClick={handleClick} className="me" id="electro" mylink={allineed}>Funk</div>
+					<div className="me" id="rock" mylink="5GcPA3C0QeI">Rock</div>
+					<div onClick={handleStop} id="stop">Stop</div>
+				</div>
 				<div id="here"></div>
 			</div>
 		)

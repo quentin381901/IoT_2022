@@ -45,12 +45,8 @@ class Temp extends React.Component {
         } else {
             return (
                 <div>
-                    <p>
-                        Température : {items.temperature} C°
-                    </p>
-                    <p>
-                        Humidité : {items.humidity} %
-                    </p>
+                    <p>Température : {items.temperature} C°</p>
+                    <p>Humidité : {items.humidity} %</p>
                 </div>
 
             )

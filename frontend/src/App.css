@@ -123,6 +123,14 @@ input:focus {
   margin-right: 2em;
 }
 
+body{
+  background-color: black;
+}
+
+#ContentMirror *{
+  font-weight: 300;
+}
+
 .k-widget.k-toolbar.k-scheduler-toolbar,
 .k-scheduler-cell.k-heading-cell.k-group-cell.k-scheduler-datecolumn,
 .k-scheduler-cell.k-heading-cell.k-group-cell.k-scheduler-timecolumn,
@@ -130,6 +138,10 @@ input:focus {
 .k-widget.k-toolbar.k-scheduler-footer,
 .k-scheduler-head{
   display: none !important;
+}
+
+.k-scheduler{
+  font-size: 14px !important;
 }
 
 .k-scheduler-row.k-scheduler-content, .k-scheduler-row{
@@ -145,13 +157,13 @@ input:focus {
   width: auto !important;
 }
 
-.k-scheduler-layout-flex .k-scheduler-group .k-group-cell, .k-scheduler-layout-flex{
+.k-scheduler-layout-flex .k-scheduler-group .k-group-cell, .k-scheduler-layout-flex, .k-scheduler-layout-flex{
   overflow: initial;
 }
 
 .k-widget.k-scheduler.k-scheduler-flex.k-floatwrap{
   height: auto !important;
-  width: 35% !important;
+  width: 55% !important;
 }
 
 .k-scheduler-layout-flex .k-scheduler-row{
@@ -201,4 +213,129 @@ input:focus {
 
 .k-scheduler-cell.k-group-content div:last-child .k-scheduler-cell{
   border-bottom: none !important;
+}
+
+.k-scheduler table, .k-scheduler thead, .k-scheduler tfoot, .k-scheduler tbody, .k-scheduler tr, .k-scheduler th, .k-scheduler td, .k-scheduler div, .k-scheduler > *{
+  text-align: start;
+}
+
+#New-Calendar{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#Calendar{
+  align-self: end;
+}
+
+#NewsContent{
+  width: 20%;
+  background-color: black;
+  color: white;
+  /*font-weight: 400;*/
+}
+
+#NewsContent h1{
+  /*font-weight: 200;*/
+  margin-bottom: 6%;
+}
+
+#NewsContent a{
+  color: white;
+  /*font-weight: 300;*/
+  text-decoration: none;
+}
+
+#NewsContent .title{
+  font-size: 100%;
+}
+
+#NewsContent .description{
+  font-size: 75%;
+}
+
+#NewsContent img{
+  float: initial;
+  width: 70px;
+}
+
+#NewsContent .item{
+  background-color: black;
+  border-bottom: solid 1px white;
+}
+
+#NewsContent .item:last-child{
+  border-bottom: none;
+}
+
+#NewsContent .item div{
+  display: none;
+}
+
+#Date-Temp-Logout{
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 10% 0% 10%;
+}
+
+#Temperature{
+  color: white;
+}
+
+#Calendar, #Logout, #Temp-Date{
+  width: 33.33%;
+}
+
+#Logout{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+}
+
+#Logout button{
+  background-color: #1c1c1c;
+}
+
+#Temp-Date p{
+  text-align: end;
+}
+
+#musique {
+  width: 40%;
+  padding-bottom: 4%;
+}
+
+#musique p{
+  padding: 2%;
+  color: white;
+  background: grey;
+}
+
+#Music-News{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0% 10% 1% 10%;
+}
+
+#Temp-Date h1{
+  color: white;
+  text-align: end;
+  font-weight: 200;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+#musique{
+  color: white;
+}
+
+#musiqueStyle{
+  display: flex;
+  justify-content: space-around;
+}
+
+#here audio{
+  width: 100%;
+  padding-top: 3%;
 }
