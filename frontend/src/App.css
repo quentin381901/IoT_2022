@@ -38,6 +38,7 @@
 }
 body {
   background: #f7f7f7;
+  overflow: hidden;
 }
 
 * {
@@ -128,7 +129,7 @@ body{
 }
 
 #ContentMirror *{
-  font-weight: 300;
+
 }
 
 .k-widget.k-toolbar.k-scheduler-toolbar,
@@ -140,8 +141,22 @@ body{
   display: none !important;
 }
 
-.k-scheduler{
-  font-size: 14px !important;
+.k-scheduler, #Temperature p, .item .title{
+  font-size: 24px !important;
+  font-weight: 400;
+}
+
+.item .title{
+  font-weight: 500;
+}
+
+#NewsContent .description{
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.k-scheduler-agendaday{
+  font-weight: 300 !important;
 }
 
 .k-scheduler-row.k-scheduler-content, .k-scheduler-row{
@@ -157,13 +172,13 @@ body{
   width: auto !important;
 }
 
-.k-scheduler-layout-flex .k-scheduler-group .k-group-cell, .k-scheduler-layout-flex, .k-scheduler-layout-flex{
-  overflow: initial;
+.k-scheduler-layout-flex .k-scheduler-group .k-group-cell, .k-scheduler-layout-flex, .k-scheduler-layout-flex, .k-scheduler-content{
+  overflow: initial !important;
 }
 
 .k-widget.k-scheduler.k-scheduler-flex.k-floatwrap{
   height: auto !important;
-  width: 55% !important;
+  width: 100% !important;
 }
 
 .k-scheduler-layout-flex .k-scheduler-row{
@@ -228,29 +243,21 @@ body{
 }
 
 #NewsContent{
-  width: 20%;
+  width: 32%;
   background-color: black;
   color: white;
-  /*font-weight: 400;*/
+  /*font-weight: 500;*/
 }
 
 #NewsContent h1{
-  /*font-weight: 200;*/
+  font-weight: 400;
   margin-bottom: 6%;
 }
 
 #NewsContent a{
   color: white;
-  /*font-weight: 300;*/
+  /*font-weight: 400;*/
   text-decoration: none;
-}
-
-#NewsContent .title{
-  font-size: 100%;
-}
-
-#NewsContent .description{
-  font-size: 75%;
 }
 
 #NewsContent img{
@@ -279,6 +286,7 @@ body{
 
 #Temperature{
   color: white;
+  font-weight: 400;
 }
 
 #Calendar, #Logout, #Temp-Date{
@@ -290,6 +298,7 @@ body{
   display: flex;
   justify-content: center;
   padding-top: 3%;
+  font-size: 20px;
 }
 
 #Logout button{
@@ -316,12 +325,13 @@ body{
   justify-content: space-between;
   align-items: flex-end;
   padding: 0% 10% 1% 10%;
+  padding-top: 45px;
 }
 
 #Temp-Date h1{
   color: white;
   text-align: end;
-  font-weight: 200;
+  font-weight: 400;
   margin-bottom: 10px;
   font-size: 40px;
 }
@@ -333,9 +343,16 @@ body{
 #musiqueStyle{
   display: flex;
   justify-content: space-around;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 #here audio{
   width: 100%;
   padding-top: 3%;
+}
+
+#timer H2{
+  color: white;
+  font-weight: 400;
 }
