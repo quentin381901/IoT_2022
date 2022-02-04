@@ -3,15 +3,17 @@ import LogoutHooks from './LogoutHooks';
 import BingNews from './BingNews';
 import Temp from './Temp';
 import "@progress/kendo-theme-default/dist/all.css";
-import {Scheduler, AgendaView} from "@progress/kendo-react-scheduler";
-import {sampleData, displayDate} from "../events-utc";
+import { Scheduler, AgendaView } from "@progress/kendo-react-scheduler";
+import { sampleData, displayDate } from "../events-utc";
 import AudioPlayer from './AudioPlayer';
+import Timer from './Timer';
 
 const Mirror = () => {
     return <div id="ContentMirror">
         <div id="Logout">
-            <LogoutHooks/>
+            <LogoutHooks />
         </div>
+
         <div id="Date-Temp-Logout">
             <div id="Calendar">
                 <Scheduler data={sampleData} defaultDate={displayDate}>
@@ -27,9 +29,12 @@ const Mirror = () => {
 
             <div id="Temp-Date">
                 <div>
+                    <Timer />
+                </div>
+                {/* <div>
                     <h1>Friday 04 2022 </h1>
                     <h1>19 : 22 : 40</h1>
-                </div>
+                </div> */}
                 <div id="Temperature">
                     <p>Température : 23 C°</p>
                     <p>Humidity : 89 %</p>
@@ -47,7 +52,7 @@ const Mirror = () => {
 
             <div id="NewsContent">
                 <h1>Les derniers news</h1>
-                <BingNews/>
+                <BingNews />
             </div>
 
         </div>
