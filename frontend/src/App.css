@@ -314,7 +314,7 @@ body{
 #Music-News{
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   padding: 0% 10% 1% 10%;
 }
 

@@ -1,5 +1,4 @@
-import ReactDOM from 'react-dom'
-import React, { Component } from 'react'
+import React from 'react'
 
 
 class Timer extends React.Component {
@@ -7,6 +6,8 @@ class Timer extends React.Component {
     constructor(props) {
         super(props);
         this.state = { date: new Date() };
+        this.day = this.state.date.getDay();
+        this.tab_jour =  ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
     }
     componentDidMount() {
         this.timerID = setInterval(
@@ -24,8 +25,10 @@ class Timer extends React.Component {
     }
     render() {
         return (
-            <div>
-                <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+            <div >
+                <h2>{this.state.date.toLocaleTimeString()}
+                    <br /> {this.tab_jour[this.day]}   {this.state.date.toLocaleDateString()}
+                </h2>
             </div>
         )
     }

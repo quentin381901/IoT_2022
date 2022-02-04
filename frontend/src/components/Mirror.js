@@ -31,10 +31,7 @@ const Mirror = () => {
                 <div>
                     <Timer />
                 </div>
-                {/* <div>
-                    <h1>Friday 04 2022 </h1>
-                    <h1>19 : 22 : 40</h1>
-                </div> */}
+                
                 <div id="Temperature">
                     <p>Température : 23 C°</p>
                     <p>Humidity : 89 %</p>
